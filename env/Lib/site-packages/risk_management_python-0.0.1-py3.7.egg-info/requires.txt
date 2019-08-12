@@ -1,0 +1,5 @@
+alpha_vantage
+pandas
+sqlalchemy
+pyodbc
+matplotlib
