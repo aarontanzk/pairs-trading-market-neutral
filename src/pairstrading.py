@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from enum import Enum
 from statsmodels.tsa.stattools import coint
-from config import ALPHAVANTAGE_APIKEY, eqArr , INTERVAL_1,INTERVAL_15,INTERVAL_60,OUTPUT_SIZE_FULL,PRICE_CLOSE,OPEN ,HIGH,LOW,CLOSE,VOLUME, NUM_DAYS
+from staticData import ALPHAVANTAGE_APIKEY, eqArr , INTERVAL_1,INTERVAL_15,INTERVAL_60,OUTPUT_SIZE_FULL,PRICE_CLOSE,OPEN ,HIGH,LOW,CLOSE,VOLUME, NUM_DAYS
 from plotFunctions import plotCointegratedPairs, plotZScore
 from alphavantageFunctions import getAverageAlphaVantageDataframe
 

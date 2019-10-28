@@ -1,5 +1,6 @@
 from flask import Flask, request
 from pairstrading import getAllPairs, getCorrelationAndCointegratedPairs, getZScoreSignal
+import config
 app = Flask(__name__)
 
 @app.route('/')
@@ -33,4 +34,5 @@ def pairSignal(): #127.0.0.1:5000/api/checkpairs?summary=COKE&change=PEP
 
 
 if __name__ == '__main__':
-   app.run()
+   #app.run()
+   app.run(host="0.0.0.0", port=config.PORT, debug=config.DEBUG_MODE)

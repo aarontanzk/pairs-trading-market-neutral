@@ -1,7 +1,7 @@
 from alpha_vantage.timeseries import TimeSeries
 from alpha_vantage.techindicators import TechIndicators
 import time
-from config import ALPHAVANTAGE_APIKEY, eqArr , INTERVAL_1,INTERVAL_15,INTERVAL_60,OUTPUT_SIZE_FULL,PRICE_CLOSE,OPEN ,HIGH,LOW,CLOSE,VOLUME, NUM_DAYS
+from staticData import ALPHAVANTAGE_APIKEY, eqArr , INTERVAL_1,INTERVAL_15,INTERVAL_60,OUTPUT_SIZE_FULL,PRICE_CLOSE,OPEN ,HIGH,LOW,CLOSE,VOLUME, NUM_DAYS
 
 ts = TimeSeries(key=ALPHAVANTAGE_APIKEY, output_format='pandas')
 ti = TechIndicators(key=ALPHAVANTAGE_APIKEY, output_format='pandas')

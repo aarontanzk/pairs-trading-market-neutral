@@ -16,15 +16,20 @@ Buy the signal(-1.2208466945241816) ---> Buy AMZN Sell NKE
 
 
 
+Production & Scability:
+1) Build Docker Image
+2) Deploy on cloud server
+3) Scale using Kubernates (OpenShift / AWS EKS / GCloud)
 
 
 
-
+To run gunicorn:
+gunicorn app:app --config=config.py
 
 To run script:
 Install setup.py
 python .\src\pairstrading.py
-
+127.0.0.1:8080/
 
 To run tests:
 python .\src\tests.py
